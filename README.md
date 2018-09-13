@@ -45,7 +45,6 @@ apiserver": "json-server --watch --port 3001 api/your_json_name.json`
 # Installing Bootstrap
 
 ```
-$installing bootstrap
 $npm install react-bootstrap --save
 $npm install bootstrap --save
 ```
@@ -69,6 +68,9 @@ Upgrade husky
 
 ```
 $npm i husky@0.15.0-rc.3 --save-dev
+
+or
+
 $yarn add husky@next --dev
 ```
 

@@ -79,5 +79,3 @@ make sure "pre-commit" is existing before running :
 ```
 $node_modules/.bin/husky-upgrade
 ```
-
-[react-slick](https://github.com/akiran/react-slick)

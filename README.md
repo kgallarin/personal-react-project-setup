@@ -55,13 +55,6 @@ and make sure you also import stylesheets :
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 ```
-
-# Need Sliders
-
-Visit :
-
-[react-slick](https://github.com/akiran/react-slick)
-
 # Husky
 
 Upgrade husky

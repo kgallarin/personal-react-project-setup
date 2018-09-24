@@ -13,11 +13,25 @@ $yarn add react-redux redux-thunk redux redux-logger redux-promise-middleware
 if you are using chrome extension for redux-store :
 
 ```
- export default () => createStore({
-    your_root_reducer,
-    REDUX STORE EXTENSION window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-    applyMiddleWare([...middlewares])
-})
+let composeEnhancers = compose;
+let middlewares = [reduxThunk]
+
+if(process.env.NODE_ENV !== 'production'){
+  const logger = reduxLogger
+
+  middlewares = [...middlewares,logger]
+
+  composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+}
+
+export default () => {
+  return createStore(
+    reducers,
+    {},
+    composeEnhancers(applyMiddleware(...middlewares))
+  )
+}
+
 ```
 
 # Husky for prettify version control

@@ -81,7 +81,3 @@ $node_modules/.bin/husky-upgrade
 ```
 
 [react-slick](https://github.com/akiran/react-slick)
-
-# Author
-
-- **Kevin M. Gallarin** - _Frontend Developer_ - [Linkedin](https://www.linkedin.com/in/kmgallarin/)
